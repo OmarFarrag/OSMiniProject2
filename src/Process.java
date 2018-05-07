@@ -31,6 +31,8 @@ public class Process {
         runTime = f_runTime;
         remainingTime = f_runTime;
         memorySize = f_memSize;
+        memoryStart=-1;
+        memoryEnd=-1;
         running = false;
     }
 

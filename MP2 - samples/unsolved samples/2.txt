@@ -1,0 +1,8 @@
+Quantum 2
+Switch 1
+process_id run_time arrival_time mem_size
+T1 3 0 200
+T2 3 0 200
+T3 3 0 200
+T4 3 0 200
+T5 10 1000 1000

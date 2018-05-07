@@ -31,6 +31,9 @@ public class IOHandler {
             line = bufferedReader.readLine();
             line = bufferedReader.readLine();
             line = bufferedReader.readLine();
+            line = bufferedReader.readLine();
+            line = bufferedReader.readLine();
+            line = bufferedReader.readLine();
 
             processes = new ArrayList<Process>();
 
@@ -39,9 +42,10 @@ public class IOHandler {
 
             while ((line = bufferedReader.readLine()) != null) {
                 //Split the line by tap spaces
-                String[] processProps = line.split("\t");
+                String[] processProps = line.split("\t\t");
 
-                processes.add(new Process(processProps[0], Double.parseDouble(processProps[1]), Double.parseDouble(processProps[2]), Integer.parseInt(processProps[3])));
+                processes.add(new Process(processProps[0], Double.parseDouble(processProps[1]), Double.parseDouble(processProps[2]), Integer.parseInt(processProps[3])+6));
+                line = bufferedReader.readLine();
             }
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
@@ -59,6 +63,8 @@ public class IOHandler {
         //FileReader reads text files in default encoding
         FileReader fileReader = null;
 
+        String line;
+
         try {
             fileReader = new FileReader(fileName);
         } catch (FileNotFoundException e) {
@@ -71,7 +77,7 @@ public class IOHandler {
         if(parameter==RRParameters.Quantum) {
             try {
                 //return the second string in the first line, converted to double
-                return Double.parseDouble(bufferedReader.readLine().split("\t")[1]);
+                return Double.parseDouble(bufferedReader.readLine().split("\t\t")[1]);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -82,9 +88,11 @@ public class IOHandler {
             try {
 
                 //Skip one line
-                bufferedReader.readLine();
+                line = bufferedReader.readLine();
+                line = bufferedReader.readLine();
+                line = bufferedReader.readLine();
 
-                return Double.parseDouble(bufferedReader.readLine().split("\t")[1]);
+                return Double.parseDouble(line.split("\t\t")[1]);
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -111,7 +119,7 @@ public class IOHandler {
             Process current=null;
             for(int i =0; i<processes.size(); i++) {
                 current = processes.get(i);
-                printWriter.append(String.format(formatStr,current.getID(),String.valueOf(current.getRunTime()),String.valueOf(current.getArrivalTime()),String.valueOf(current.getFinishTime()),String.valueOf(current.getMemorySize()),String.valueOf(current.getMemoryStart()),String.valueOf(current.getMemoryEnd())));
+                printWriter.append(String.format(formatStr,current.getID(),String.valueOf(current.getRunTime()),String.valueOf(current.getArrivalTime()),String.valueOf(current.getFinishTime()),String.valueOf(current.getMemorySize()-6),String.valueOf(current.getMemoryStart()),String.valueOf(current.getMemoryEnd())));
                 printWriter.newLine();
             }
 
