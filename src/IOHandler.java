@@ -9,10 +9,10 @@ enum RRParameters{
 
 public class IOHandler {
 
-
     //This function returns the processes read from the input file
     public ArrayList<Process> readProcesses() {
-        String fileName = "input.txt";
+
+        String fileName = "4.txt";
 
         //This will reference one line from input at a time
         String line = null;
@@ -58,7 +58,7 @@ public class IOHandler {
 
     //Function that returns a specific parameter for the RR algorithm
     public double readRRParameter(RRParameters parameter) {
-        String fileName = "input.txt";
+        String fileName = "4.txt";
 
         //FileReader reads text files in default encoding
         FileReader fileReader = null;
@@ -86,7 +86,6 @@ public class IOHandler {
         {
 
             try {
-
                 //Skip one line
                 line = bufferedReader.readLine();
                 line = bufferedReader.readLine();
@@ -104,7 +103,7 @@ public class IOHandler {
 
     public void writeResults(ArrayList<Process> processes)
     {
-        String  fileName = "output.txt";
+        String  fileName = "output4.txt";
         FileWriter fileWriter = null;
         try {
             fileWriter = new FileWriter(fileName);
@@ -123,13 +122,41 @@ public class IOHandler {
                 printWriter.newLine();
             }
 
-
             printWriter.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+    }
 
+    /**
+     *
+     * @param text the text to be append to the log file
+     * @param newLine true if you want a new line, otherwise false
+     */
+    public void writeToLogFile(String text, boolean newLine) {
+        String fileName = "log4.txt";
+        FileWriter fileWriter;
+        try {
+            fileWriter = new FileWriter(fileName, true);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            bufferedWriter.append(text);
+            if(newLine) {
+                bufferedWriter.newLine();
+            }
+            bufferedWriter.flush();
+        }catch (IOException e) {
+            e.getMessage();
+        }
+    }
+
+    public void closeFile(String fileName) {
+        try {
+            FileWriter fileWriter = new FileWriter(fileName);
+            fileWriter.close();
+        }catch (Exception e) {
+            e.getMessage();
+        }
     }
 
 
@@ -142,7 +169,6 @@ public class IOHandler {
         double switchTime = fileHandler.readRRParameter(RRParameters.Switch);
 
         fileHandler.writeResults(processes);
-
 
         int x;
 

@@ -90,7 +90,6 @@ public class BuddyMemoryAllocator {
         memoryChunks.get(memoryChunkToDeallocateIndex).setAllocated(false);
 
         RestructureMemory(memoryChunks);
-
 //
 //
 //
@@ -135,19 +134,28 @@ public class BuddyMemoryAllocator {
 
     }
 
-    public static void RestructureMemory(ArrayList<MemoryChunk> memoryChunks)
-    {
-        for(int i=0 ; i<memoryChunks.size()-1; i++)
-        {
-            MemoryChunk current = memoryChunks.get(i);
-            MemoryChunk next = memoryChunks.get(i+1);
-            if(!current.isAllocated() && !next.isAllocated() && current.getSize() == next.getSize() && (current.getStart()/current.getSize()%2==0))
-            {
+    public static void RestructureMemory(ArrayList<MemoryChunk> memoryChunks) {
+        if(memoryChunks.size() == 1) {
+            return;
+        }
+        if(memoryChunks.size() == 2) {
+            if(!(memoryChunks.get(0).isAllocated() || memoryChunks.get(1).isAllocated())) {
+                memoryChunks.remove(0);
+                memoryChunks.set(0, new MemoryChunk(false, 0, 1023));
+            }
+        }
+        else {
+
+            for (int i = 0; i < memoryChunks.size() - 1; i++) {
+                MemoryChunk current = memoryChunks.get(i);
+                MemoryChunk next = memoryChunks.get(i + 1);
+                if (!current.isAllocated() && !next.isAllocated() && current.getSize() == next.getSize() && (current.getStart() / current.getSize() % 2 == 0)) {
 
                     current.setEnd(next.getEnd());
-                    memoryChunks.remove(i+1);
+                    memoryChunks.remove(i + 1);
                     i--;
 
+                }
             }
         }
     }

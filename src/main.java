@@ -11,7 +11,7 @@ public class main {
         double contextSwitch = fileHandler.readRRParameter(RRParameters.Switch);
         double quantum = fileHandler.readRRParameter(RRParameters.Quantum);
 
-        ArrayList<Process> scheduledProcesses =   RoundRobbin.schedule(processes,contextSwitch , quantum);
+        ArrayList<Process> scheduledProcesses = RoundRobbin.schedule(processes,contextSwitch , quantum);
 
         fileHandler.writeResults(scheduledProcesses);
        /* Process process = new Process("T1",10,0,10);

@@ -9,6 +9,8 @@ public class Process {
     int memoryStart;
     int memoryEnd;
     int memorySize;
+    int numWait;
+    private static final int MAX_WAITS = 5;
 
     public double getFinishTime() {
         return finishTime;
@@ -20,10 +22,6 @@ public class Process {
 
     double finishTime;
 
-
-
-
-
     public Process(String f_ID, double f_runTime, double f_arrivalTime, int f_memSize)
     {
         ID = f_ID;
@@ -34,6 +32,15 @@ public class Process {
         memoryStart=-1;
         memoryEnd=-1;
         running = false;
+        numWait = 0;
+    }
+
+    public int getNumWait() {
+        return numWait;
+    }
+
+    public void setNumWait(int numWait) {
+        this.numWait = numWait;
     }
 
     public Process(int memorySize) {
@@ -109,4 +116,13 @@ public class Process {
     public void setTurnAroundTime(double t){turnAroundTime=t;}
     public void decreaseRemainingTime(double t){remainingTime-=t;}
     public double getRemainingTime(){ return remainingTime;}
+
+    public boolean isToBeHalted() {
+        numWait++;
+        if(numWait >= MAX_WAITS)
+            return true;
+        return false;
+    }
+
+
 }
