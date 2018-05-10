@@ -42,7 +42,10 @@ public class RoundRobbin {
         String prevProcessID = null;
         int numberOfProcesses = processesList.size();
         Process process = null;
-        boolean firstTime = true;
+
+        // only true for the first time only, then depends on conditions
+        boolean prevProcessIsRun = true;
+
 
         //an IOHandler to log the stats in the logfile
         IOHandler ioHandler = new IOHandler();
@@ -102,7 +105,6 @@ public class RoundRobbin {
             }
 
 
-
             //If there was a process running till the current time, add it to the back of the queue
             if(temp!=null){ activeProcesses.add(temp);}
 
@@ -111,7 +113,6 @@ public class RoundRobbin {
 
                 //Temp is the current running process
                 temp = activeProcesses.remove();
-
 
                 process = temp;
 
@@ -148,6 +149,7 @@ public class RoundRobbin {
                     NodesTime.add(time);
                     NodesProcessesNumbers.add(temp.getID());
 
+                    prevProcessIsRun = true;
 
                     //if there is only one process running
                     if(activeProcesses.size() == 0 && processesList.size() == 0) {
@@ -166,6 +168,7 @@ public class RoundRobbin {
                 }
                 else
                 {
+                    ioHandler.writeToLogFile("Process " + temp.getID() + " not run: not enough memory", true);
                     if(temp.isToBeHalted()) {
                         prevProcessID = temp.getID();
                         temp = null;
