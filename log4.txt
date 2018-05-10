@@ -1,0 +1,37 @@
+Queue: T1, T2, T3, T4, T5, 
+Executing Process T1 : started at 0.0 finished at 1.0 memory starts at 0 and ends at 255
+Queue: T2, T3, T4, T5, 
+Process switching:    Started at 2.0, finished at 3.0
+Executing Process T2 : started at 4.0 finished at 6.0 memory starts at 0 and ends at 255
+Queue: T3, T4, T5, 
+Process switching:    Started at 7.0, finished at 8.0
+Executing Process T3 : started at 9.0 finished at 11.0, 1.0 remaining,  memory starts at 0 and ends at 255
+Queue: T4, T5, T3, 
+Process switching:    Started at 12.0, finished at 13.0
+Executing Process T4 : started at 14.0 finished at 16.0, 8.0 remaining,  memory starts at 256 and ends at 511
+Queue: T5, T3, T4, 
+Process T5 not run: not enough memory
+Queue: T3, T4, T5, 
+Process switching:    Started at 17.0, finished at 18.0
+Executing Process T3 : started at 19.0 finished at 20.0 memory starts at 0 and ends at 255
+Queue: T4, T5, 
+Process switching:    Started at 21.0, finished at 22.0
+Executing Process T4 : started at 23.0 finished at 25.0, 6.0 remaining,  memory starts at 256 and ends at 511
+Queue: T5, T4, 
+Process T5 not run: not enough memory
+Queue: T4, T5, 
+Process switching:    Started at 26.0, finished at 27.0
+Executing Process T4 : started at 28.0 finished at 30.0, 4.0 remaining,  memory starts at 256 and ends at 511
+Queue: T5, T4, 
+Process T5 not run: not enough memory
+Queue: T4, T5, 
+Process switching:    Started at 31.0, finished at 32.0
+Executing Process T4 : started at 33.0 finished at 35.0, 2.0 remaining,  memory starts at 256 and ends at 511
+Queue: T5, T4, 
+Process T5 not run: not enough memory
+Queue: T4, T5, 
+Process switching:    Started at 36.0, finished at 37.0
+Executing Process T4 : started at 38.0 finished at 40.0 memory starts at 256 and ends at 511
+Queue: T5, 
+Process switching:    Started at 41.0, finished at 42.0
+Executing Process T5 : started at 43.0 finished at 48.0 memory starts at 0 and ends at 1023

@@ -1,0 +1,25 @@
+Queue: T1, T2, T3, T4, 
+Executing Process T1 : started at 0.0 finished at 2.0, 1.0 remaining,  memory starts at 0 and ends at 255
+Queue: T2, T3, T4, T1, 
+Process switching:    Started at 3.0, finished at 4.0
+Executing Process T2 : started at 5.0 finished at 7.0, 1.0 remaining,  memory starts at 256 and ends at 511
+Queue: T3, T4, T1, T2, 
+Process switching:    Started at 8.0, finished at 9.0
+Executing Process T3 : started at 10.0 finished at 12.0, 1.0 remaining,  memory starts at 512 and ends at 767
+Queue: T4, T1, T2, T3, 
+Process switching:    Started at 13.0, finished at 14.0
+Executing Process T4 : started at 15.0 finished at 17.0, 1.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T2, T3, T4, 
+Process switching:    Started at 18.0, finished at 19.0
+Executing Process T1 : started at 20.0 finished at 21.0 memory starts at 0 and ends at 255
+Queue: T2, T3, T4, 
+Process switching:    Started at 22.0, finished at 23.0
+Executing Process T2 : started at 24.0 finished at 25.0 memory starts at 256 and ends at 511
+Queue: T3, T4, 
+Process switching:    Started at 26.0, finished at 27.0
+Executing Process T3 : started at 28.0 finished at 29.0 memory starts at 512 and ends at 767
+Queue: T4, 
+Process switching:    Started at 30.0, finished at 31.0
+Executing Process T4 : started at 32.0 finished at 33.0 memory starts at 768 and ends at 1023
+Queue: T5, 
+Executing Process T5 : started at 1000.0 finished at 1010.0 memory starts at 0 and ends at 1023

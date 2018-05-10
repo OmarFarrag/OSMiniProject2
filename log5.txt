@@ -1,0 +1,10 @@
+Queue: T0, 
+Executing Process T0 : started at 0.0 finished at 3.0, 77.0 remaining,  memory starts at 0 and ends at 15
+Queue: T0, 
+Executing Process T0 : started at 3.0 finished at 6.0, 74.0 remaining,  memory starts at 0 and ends at 15
+Queue: T1, T0, 
+Process switching:    Started at 7.0, finished at 10.0
+Executing Process T1 : started at 11.0 finished at 12.0 memory starts at 16 and ends at 31
+Queue: T0, 
+Process switching:    Started at 13.0, finished at 16.0
+Executing Process T0 : started at 17.0 finished at 91.0 memory starts at 0 and ends at 15

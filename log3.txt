@@ -1,0 +1,321 @@
+Queue: T0, T1, T2, T3, 
+Executing Process T0 : started at 0.0 finished at 2.0, 1.0 remaining,  memory starts at 0 and ends at 255
+Queue: T1, T2, T3, T0, 
+Process switching:    Started at 3.0, finished at 4.0
+Executing Process T1 : started at 5.0 finished at 7.0, 98.0 remaining,  memory starts at 256 and ends at 287
+Queue: T2, T3, T0, T1, 
+Process switching:    Started at 8.0, finished at 9.0
+Executing Process T2 : started at 10.0 finished at 12.0, 1.0 remaining,  memory starts at 512 and ends at 767
+Queue: T3, T0, T1, T2, 
+Process switching:    Started at 13.0, finished at 14.0
+Executing Process T3 : started at 15.0 finished at 17.0, 98.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T0, T1, T2, T3, 
+Process switching:    Started at 18.0, finished at 19.0
+Executing Process T0 : started at 20.0 finished at 21.0 memory starts at 0 and ends at 255
+Queue: T1, T2, T3, 
+Process switching:    Started at 22.0, finished at 23.0
+Executing Process T1 : started at 24.0 finished at 26.0, 96.0 remaining,  memory starts at 256 and ends at 287
+Queue: T2, T3, T1, 
+Process switching:    Started at 27.0, finished at 28.0
+Executing Process T2 : started at 29.0 finished at 30.0 memory starts at 512 and ends at 767
+Queue: T3, T1, 
+Process switching:    Started at 31.0, finished at 32.0
+Executing Process T3 : started at 33.0 finished at 35.0, 96.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 36.0, finished at 37.0
+Executing Process T1 : started at 38.0 finished at 40.0, 94.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T4, T1, 
+Process switching:    Started at 41.0, finished at 42.0
+Executing Process T3 : started at 43.0 finished at 45.0, 94.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T4, T1, T3, 
+Process T4 not run: not enough memory
+Queue: T1, T3, T4, 
+Process switching:    Started at 46.0, finished at 47.0
+Executing Process T1 : started at 48.0 finished at 50.0, 92.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T4, T1, 
+Process switching:    Started at 51.0, finished at 52.0
+Executing Process T3 : started at 53.0 finished at 55.0, 92.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T4, T1, T3, 
+Process T4 not run: not enough memory
+Queue: T1, T3, T4, 
+Process switching:    Started at 56.0, finished at 57.0
+Executing Process T1 : started at 58.0 finished at 60.0, 90.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T4, T1, 
+Process switching:    Started at 61.0, finished at 62.0
+Executing Process T3 : started at 63.0 finished at 65.0, 90.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T4, T1, T3, 
+Process T4 not run: not enough memory
+Queue: T1, T3, T4, 
+Process switching:    Started at 66.0, finished at 67.0
+Executing Process T1 : started at 68.0 finished at 70.0, 88.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T4, T1, 
+Process switching:    Started at 71.0, finished at 72.0
+Executing Process T3 : started at 73.0 finished at 75.0, 88.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T4, T1, T3, 
+Process T4 not run: not enough memory
+Queue: T1, T3, T4, 
+Process switching:    Started at 76.0, finished at 77.0
+Executing Process T1 : started at 78.0 finished at 80.0, 86.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T4, T1, 
+Process switching:    Started at 81.0, finished at 82.0
+Executing Process T3 : started at 83.0 finished at 85.0, 86.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T4, T1, T3, 
+Process T4 not run: not enough memory
+Queue: T1, T3, 
+Process switching:    Started at 86.0, finished at 87.0
+Executing Process T1 : started at 88.0 finished at 90.0, 84.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 91.0, finished at 92.0
+Executing Process T3 : started at 93.0 finished at 95.0, 84.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 96.0, finished at 97.0
+Executing Process T1 : started at 98.0 finished at 100.0, 82.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 101.0, finished at 102.0
+Executing Process T3 : started at 103.0 finished at 105.0, 82.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 106.0, finished at 107.0
+Executing Process T1 : started at 108.0 finished at 110.0, 80.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 111.0, finished at 112.0
+Executing Process T3 : started at 113.0 finished at 115.0, 80.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 116.0, finished at 117.0
+Executing Process T1 : started at 118.0 finished at 120.0, 78.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 121.0, finished at 122.0
+Executing Process T3 : started at 123.0 finished at 125.0, 78.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 126.0, finished at 127.0
+Executing Process T1 : started at 128.0 finished at 130.0, 76.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 131.0, finished at 132.0
+Executing Process T3 : started at 133.0 finished at 135.0, 76.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 136.0, finished at 137.0
+Executing Process T1 : started at 138.0 finished at 140.0, 74.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 141.0, finished at 142.0
+Executing Process T3 : started at 143.0 finished at 145.0, 74.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 146.0, finished at 147.0
+Executing Process T1 : started at 148.0 finished at 150.0, 72.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 151.0, finished at 152.0
+Executing Process T3 : started at 153.0 finished at 155.0, 72.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 156.0, finished at 157.0
+Executing Process T1 : started at 158.0 finished at 160.0, 70.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 161.0, finished at 162.0
+Executing Process T3 : started at 163.0 finished at 165.0, 70.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 166.0, finished at 167.0
+Executing Process T1 : started at 168.0 finished at 170.0, 68.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 171.0, finished at 172.0
+Executing Process T3 : started at 173.0 finished at 175.0, 68.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 176.0, finished at 177.0
+Executing Process T1 : started at 178.0 finished at 180.0, 66.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 181.0, finished at 182.0
+Executing Process T3 : started at 183.0 finished at 185.0, 66.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 186.0, finished at 187.0
+Executing Process T1 : started at 188.0 finished at 190.0, 64.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 191.0, finished at 192.0
+Executing Process T3 : started at 193.0 finished at 195.0, 64.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 196.0, finished at 197.0
+Executing Process T1 : started at 198.0 finished at 200.0, 62.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 201.0, finished at 202.0
+Executing Process T3 : started at 203.0 finished at 205.0, 62.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 206.0, finished at 207.0
+Executing Process T1 : started at 208.0 finished at 210.0, 60.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 211.0, finished at 212.0
+Executing Process T3 : started at 213.0 finished at 215.0, 60.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 216.0, finished at 217.0
+Executing Process T1 : started at 218.0 finished at 220.0, 58.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 221.0, finished at 222.0
+Executing Process T3 : started at 223.0 finished at 225.0, 58.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 226.0, finished at 227.0
+Executing Process T1 : started at 228.0 finished at 230.0, 56.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 231.0, finished at 232.0
+Executing Process T3 : started at 233.0 finished at 235.0, 56.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 236.0, finished at 237.0
+Executing Process T1 : started at 238.0 finished at 240.0, 54.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 241.0, finished at 242.0
+Executing Process T3 : started at 243.0 finished at 245.0, 54.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 246.0, finished at 247.0
+Executing Process T1 : started at 248.0 finished at 250.0, 52.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 251.0, finished at 252.0
+Executing Process T3 : started at 253.0 finished at 255.0, 52.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 256.0, finished at 257.0
+Executing Process T1 : started at 258.0 finished at 260.0, 50.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 261.0, finished at 262.0
+Executing Process T3 : started at 263.0 finished at 265.0, 50.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 266.0, finished at 267.0
+Executing Process T1 : started at 268.0 finished at 270.0, 48.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 271.0, finished at 272.0
+Executing Process T3 : started at 273.0 finished at 275.0, 48.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 276.0, finished at 277.0
+Executing Process T1 : started at 278.0 finished at 280.0, 46.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 281.0, finished at 282.0
+Executing Process T3 : started at 283.0 finished at 285.0, 46.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 286.0, finished at 287.0
+Executing Process T1 : started at 288.0 finished at 290.0, 44.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 291.0, finished at 292.0
+Executing Process T3 : started at 293.0 finished at 295.0, 44.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 296.0, finished at 297.0
+Executing Process T1 : started at 298.0 finished at 300.0, 42.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 301.0, finished at 302.0
+Executing Process T3 : started at 303.0 finished at 305.0, 42.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 306.0, finished at 307.0
+Executing Process T1 : started at 308.0 finished at 310.0, 40.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 311.0, finished at 312.0
+Executing Process T3 : started at 313.0 finished at 315.0, 40.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 316.0, finished at 317.0
+Executing Process T1 : started at 318.0 finished at 320.0, 38.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 321.0, finished at 322.0
+Executing Process T3 : started at 323.0 finished at 325.0, 38.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 326.0, finished at 327.0
+Executing Process T1 : started at 328.0 finished at 330.0, 36.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 331.0, finished at 332.0
+Executing Process T3 : started at 333.0 finished at 335.0, 36.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 336.0, finished at 337.0
+Executing Process T1 : started at 338.0 finished at 340.0, 34.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 341.0, finished at 342.0
+Executing Process T3 : started at 343.0 finished at 345.0, 34.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 346.0, finished at 347.0
+Executing Process T1 : started at 348.0 finished at 350.0, 32.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 351.0, finished at 352.0
+Executing Process T3 : started at 353.0 finished at 355.0, 32.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 356.0, finished at 357.0
+Executing Process T1 : started at 358.0 finished at 360.0, 30.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 361.0, finished at 362.0
+Executing Process T3 : started at 363.0 finished at 365.0, 30.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 366.0, finished at 367.0
+Executing Process T1 : started at 368.0 finished at 370.0, 28.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 371.0, finished at 372.0
+Executing Process T3 : started at 373.0 finished at 375.0, 28.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 376.0, finished at 377.0
+Executing Process T1 : started at 378.0 finished at 380.0, 26.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 381.0, finished at 382.0
+Executing Process T3 : started at 383.0 finished at 385.0, 26.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 386.0, finished at 387.0
+Executing Process T1 : started at 388.0 finished at 390.0, 24.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 391.0, finished at 392.0
+Executing Process T3 : started at 393.0 finished at 395.0, 24.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 396.0, finished at 397.0
+Executing Process T1 : started at 398.0 finished at 400.0, 22.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 401.0, finished at 402.0
+Executing Process T3 : started at 403.0 finished at 405.0, 22.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 406.0, finished at 407.0
+Executing Process T1 : started at 408.0 finished at 410.0, 20.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 411.0, finished at 412.0
+Executing Process T3 : started at 413.0 finished at 415.0, 20.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 416.0, finished at 417.0
+Executing Process T1 : started at 418.0 finished at 420.0, 18.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 421.0, finished at 422.0
+Executing Process T3 : started at 423.0 finished at 425.0, 18.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 426.0, finished at 427.0
+Executing Process T1 : started at 428.0 finished at 430.0, 16.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 431.0, finished at 432.0
+Executing Process T3 : started at 433.0 finished at 435.0, 16.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 436.0, finished at 437.0
+Executing Process T1 : started at 438.0 finished at 440.0, 14.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 441.0, finished at 442.0
+Executing Process T3 : started at 443.0 finished at 445.0, 14.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 446.0, finished at 447.0
+Executing Process T1 : started at 448.0 finished at 450.0, 12.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 451.0, finished at 452.0
+Executing Process T3 : started at 453.0 finished at 455.0, 12.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 456.0, finished at 457.0
+Executing Process T1 : started at 458.0 finished at 460.0, 10.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 461.0, finished at 462.0
+Executing Process T3 : started at 463.0 finished at 465.0, 10.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 466.0, finished at 467.0
+Executing Process T1 : started at 468.0 finished at 470.0, 8.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 471.0, finished at 472.0
+Executing Process T3 : started at 473.0 finished at 475.0, 8.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 476.0, finished at 477.0
+Executing Process T1 : started at 478.0 finished at 480.0, 6.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 481.0, finished at 482.0
+Executing Process T3 : started at 483.0 finished at 485.0, 6.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 486.0, finished at 487.0
+Executing Process T1 : started at 488.0 finished at 490.0, 4.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 491.0, finished at 492.0
+Executing Process T3 : started at 493.0 finished at 495.0, 4.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 496.0, finished at 497.0
+Executing Process T1 : started at 498.0 finished at 500.0, 2.0 remaining,  memory starts at 256 and ends at 287
+Queue: T3, T1, 
+Process switching:    Started at 501.0, finished at 502.0
+Executing Process T3 : started at 503.0 finished at 505.0, 2.0 remaining,  memory starts at 768 and ends at 1023
+Queue: T1, T3, 
+Process switching:    Started at 506.0, finished at 507.0
+Executing Process T1 : started at 508.0 finished at 510.0 memory starts at 256 and ends at 287
+Queue: T3, 
+Process switching:    Started at 511.0, finished at 512.0
+Executing Process T3 : started at 513.0 finished at 515.0 memory starts at 768 and ends at 1023

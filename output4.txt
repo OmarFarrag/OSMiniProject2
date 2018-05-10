@@ -1,0 +1,12 @@
+process_id      run_time        arrival_time    finish_time     mem_size        mem_start       mem_end        
+
+T1              1.0             0.0             1.0             200             0               255            
+
+T2              2.0             0.0             6.0             200             0               255            
+
+T3              3.0             0.0             20.0            200             0               255            
+
+T4              10.0            0.0             40.0            200             256             511            
+
+T5              5.0             0.0             48.0            1000            0               1023           
+
