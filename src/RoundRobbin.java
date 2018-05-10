@@ -1,7 +1,5 @@
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.awt.font.TextMeasurer;
+import java.util.*;
 
 import static java.util.Comparator.comparing;
 
@@ -55,7 +53,7 @@ public class RoundRobbin {
             if(!processesList.isEmpty()) {
                 for(int i = 0; i < processesList.size(); i++) {
                     if(time >= processesList.get(i).getArrivalTime() &&
-                            !processesList.get(i).isRunning() && processesList.get(i).getNumWait() == 0) {
+                            !processesList.get(i).isRunning() && !processNumberOrder.contains(processesList.get(i))) {
                         processNumberOrder.add(processesList.get(i));
                     }
                 }
@@ -67,6 +65,7 @@ public class RoundRobbin {
                 }
             }
 
+            if(processNumberOrder.size() > 0) {
                 ioHandler.writeToLogFile("Queue: ", false);
 
             /*
@@ -78,6 +77,7 @@ public class RoundRobbin {
                         processNumberOrder.remove(i);
                         if (temp != null) {
                             processNumberOrder.add(temp);
+                            break;
                         }
                     }
                 }
@@ -87,6 +87,7 @@ public class RoundRobbin {
                 }
 
                 ioHandler.writeToLogFile("", true);
+            }
 
             //Add the processes whose arrival time is less than or equal current time
             //and check the list is not empty
@@ -100,6 +101,8 @@ public class RoundRobbin {
 
             }
 
+
+
             //If there was a process running till the current time, add it to the back of the queue
             if(temp!=null){ activeProcesses.add(temp);}
 
@@ -108,6 +111,8 @@ public class RoundRobbin {
 
                 //Temp is the current running process
                 temp = activeProcesses.remove();
+
+
                 process = temp;
 
                 double tempRemTime = temp.getRemainingTime();
@@ -130,7 +135,6 @@ public class RoundRobbin {
 
                     ////////////////////////////////////////////////////////////
 
-
                     //Check if it is the first time to run
 
                         if (!temp.getRunning()) {
@@ -143,13 +147,31 @@ public class RoundRobbin {
 
                     NodesTime.add(time);
                     NodesProcessesNumbers.add(temp.getID());
+
+
+                    //if there is only one process running
+                    if(activeProcesses.size() == 0 && processesList.size() == 0) {
+                        ioHandler.writeToLogFile(" started at " + time, false);
+                        time = time + temp.getRemainingTime();
+                        ioHandler.writeToLogFile(" finished at " + time, false);
+                        ioHandler.writeToLogFile(" memory starts at " + temp.getMemoryStart() + " and ends at " + temp.getMemoryEnd(), true);
+                        finishedProcesses.add(temp);
+                        temp.setFinishTime(time);
+                        BuddyMemoryAllocator.Deallocate(memoryChunks, temp);
+                        break;
+                    }
+
                     temp.decreaseRemainingTime(quantum);
 
                 }
                 else
                 {
                     if(temp.isToBeHalted()) {
+                        prevProcessID = temp.getID();
                         temp = null;
+                    }
+                    if(temp != null) {
+                        prevProcessID = temp.getID();
                     }
                     continue;
                 }

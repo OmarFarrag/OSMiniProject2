@@ -12,7 +12,7 @@ public class IOHandler {
     //This function returns the processes read from the input file
     public ArrayList<Process> readProcesses() {
 
-        String fileName = "4.txt";
+        String fileName = "3.txt";
 
         //This will reference one line from input at a time
         String line = null;
@@ -58,7 +58,7 @@ public class IOHandler {
 
     //Function that returns a specific parameter for the RR algorithm
     public double readRRParameter(RRParameters parameter) {
-        String fileName = "4.txt";
+        String fileName = "3.txt";
 
         //FileReader reads text files in default encoding
         FileReader fileReader = null;
@@ -103,7 +103,7 @@ public class IOHandler {
 
     public void writeResults(ArrayList<Process> processes)
     {
-        String  fileName = "output4.txt";
+        String  fileName = "output3.txt";
         FileWriter fileWriter = null;
         try {
             fileWriter = new FileWriter(fileName);
@@ -135,7 +135,7 @@ public class IOHandler {
      * @param newLine true if you want a new line, otherwise false
      */
     public void writeToLogFile(String text, boolean newLine) {
-        String fileName = "log4.txt";
+        String fileName = "log3.txt";
         FileWriter fileWriter;
         try {
             fileWriter = new FileWriter(fileName, true);
